@@ -69,7 +69,7 @@ To design and implement network segmentation using VLANs and configure Access Co
 
     ![ACL Testing](./Accessing webpage from PC3 to PC1.PNG)
 
-    ![ACL testing](./ACL Configuration.PNG) 
+    ![ACL testing](./acl-configuration.png) 
 
 ---
 
