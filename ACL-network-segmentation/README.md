@@ -18,7 +18,7 @@ To design and implement network segmentation using VLANs and configure Access Co
   - **PC3, PC4** → Finance
 - All devices were connected using Ethernet cables to the switch.
 
-     ![Devices Setup](./Devices in CPT.PNG) 
+     ![Devices Setup](./devices-cpt.png) 
 ---
 
 ###  Task 2: VLAN and Inter-VLAN Routing
@@ -28,13 +28,13 @@ To design and implement network segmentation using VLANs and configure Access Co
   - VLAN 20 → Finance
 - Switch ports were assigned to VLANs accordingly.
 
-    ![VLAN Setup](./Switch CLI.PNG)
+    ![VLAN Setup](./switch-cli.png)
 
 - **Router-on-a-Stick (Inter-VLAN Routing)** configured:
   - Subinterfaces enabled VLAN communication.
   - All PCs could ping each other after setup.
 
-      ![InterVLAN Setup](./Router CLI.PNG)  
+      ![InterVLAN Setup](./router-cli.png)  
 
 - **IP Addressing:**
   - **HR VLAN**
@@ -57,7 +57,7 @@ To design and implement network segmentation using VLANs and configure Access Co
       access-list 100 deny tcp 192.168.2.0 0.0.0.255 192.168.1.0 0.0.0.255 eq 80
       access-list 100 permit ip any any
 
-    ![ACL Setup](./ACL Configuration.PNG)  
+    ![ACL Setup](./acl-configuration.png)  
 
 ---
 
@@ -67,9 +67,9 @@ To design and implement network segmentation using VLANs and configure Access Co
 - **ICMP (ping)** traffic was still **allowed**, confirming ACL precision.
 - Successful test demonstrated controlled access between segments.
 
-    ![ACL Testing](./Accessing webpage from PC3 to PC1.PNG)
+    ![ACL Testing](./accessing-webpage.png)
 
-    ![ACL testing](./acl-configuration.png) 
+    ![ACL testing](./acl-rule.png) 
 
 ---
 
