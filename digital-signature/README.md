@@ -26,9 +26,9 @@ This was done using **OpenSSL** on an **AWS EC2 Ubuntu server**.
 
  -  Updated and Installed openssl
 
-    ```sudo apt update
+    ```sudo apt update```
  
-    sudo apt install openssl```
+    ```sudo apt install openssl```
 
 ---
 
@@ -77,6 +77,7 @@ This was done using **OpenSSL** on an **AWS EC2 Ubuntu server**.
     ![Tampered document](./altered-document.png)
 
 -  Then ran the verification command again
-    ```openssl dgst -sha256 -verify user_public_key.pem -signature document.sig lilian_document.txt```
+    
+```openssl dgst -sha256 -verify user_public_key.pem -signature document.sig lilian_document.txt```
 
     ![Document tampered](./no-integrity.png)
