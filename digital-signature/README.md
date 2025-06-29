@@ -67,7 +67,6 @@ This was done using **OpenSSL** on an **AWS EC2 Ubuntu server**.
 ### Task 6: Verify the Document
 
     openssl dgst -sha256 -verify user_public_key.pem -signature document.sig lilian_document.txt
-    
     ![Document verified](./verified-integrity.png)
 
 -   This confirms the document has not been tampered with.
@@ -77,7 +76,6 @@ This was done using **OpenSSL** on an **AWS EC2 Ubuntu server**.
     ![Tampered document](./altered-document.png)
 
 -  Then ran the verification command again
-
     openssl dgst -sha256 -verify user_public_key.pem -signature document.sig lilian_document.txt
 
     ![Document tampered](./no-integrity.png)
