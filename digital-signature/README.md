@@ -22,20 +22,20 @@ This was done using **OpenSSL** on an **AWS EC2 Ubuntu server**.
 ### Task 1: Connected to an ubuntu server through SSH
 -   Ran this command
 
-    ssh -i C:\Users\hp\Downloads\ubuntu-key.pem ubuntu@(ip-address)
+    ```ssh -i C:\Users\hp\Downloads\ubuntu-key.pem ubuntu@(ip-address)```
 
  -  Updated and Installed openssl
 
-    sudo apt update
+    ```sudo apt update
  
-    sudo apt install openssl
+    sudo apt install openssl```
 
 ---
 
 ### Task 2: Created a Document
 -   Created a single text file
     
-    nano lilian_document.txt
+    ```nano lilian_document.txt```
 
     ![Document created](./nano-portfolio.png)
 
@@ -66,7 +66,8 @@ This was done using **OpenSSL** on an **AWS EC2 Ubuntu server**.
 
 ### Task 6: Verify the Document
 
-    openssl dgst -sha256 -verify user_public_key.pem -signature document.sig lilian_document.txt
+    ```openssl dgst -sha256 -verify user_public_key.pem -signature document.sig lilian_document.txt```
+
     ![Document verified](./verified-integrity.png)
 
 -   This confirms the document has not been tampered with.
@@ -76,6 +77,6 @@ This was done using **OpenSSL** on an **AWS EC2 Ubuntu server**.
     ![Tampered document](./altered-document.png)
 
 -  Then ran the verification command again
-    openssl dgst -sha256 -verify user_public_key.pem -signature document.sig lilian_document.txt
+    ```openssl dgst -sha256 -verify user_public_key.pem -signature document.sig lilian_document.txt```
 
     ![Document tampered](./no-integrity.png)
