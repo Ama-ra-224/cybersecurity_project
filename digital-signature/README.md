@@ -68,16 +68,19 @@ This was done using **OpenSSL** on an **AWS EC2 Ubuntu server**.
 
     openssl dgst -sha256 -verify user_public_key.pem -signature document.sig lilian_document.txt
 
+- This confirms the document has not been tampered with.
+
     ![Document verified](./verified-integrity.png)
 
--   This confirms the document has not been tampered with.
 
 ### Task 7: Tamper With the Document
 
     ![Tampered document](./altered-document.png)
 
 -  Then ran the verification command again
-    
+   
     openssl dgst -sha256 -verify user_public_key.pem -signature document.sig lilian_document.txt
+
+- Verification failure
 
     ![Document tampered](./no-integrity.png)
