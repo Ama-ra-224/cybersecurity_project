@@ -29,7 +29,7 @@ The steps included environment setup, network monitoring, simulated attacks, pac
           ping -f <Windows_IP>
 - Captured the attack traffic in real time with Wireshark
 
-           ![ICMP Attack in Wireshark](icmp-attack.png)
+           ![ICMP Attack in Wireshark](./icmp-attack.png)
 
 ---
 
@@ -39,7 +39,7 @@ The steps included environment setup, network monitoring, simulated attacks, pac
 - Captured and filtered **HTTP request packets**
 - Observed unencrypted data being transmitted
 
-         ![HTTP in Wireshark](http-capture.png) 
+         ![HTTP in Wireshark](./http-capture.png) 
 ---
 
 ## Task 5: Observations and Recommendations
